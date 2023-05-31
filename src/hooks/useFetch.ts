@@ -23,5 +23,27 @@ export const useFetch = (url) => {
         getData();
     }, [url]);
 
-    return {data, loading, error}
+    const executePut = async (data) => {
+        try {
+          const response = await fetch(`${baseUrl}/${url}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+    
+          if (!response.ok) {
+            throw new Error("Something went wrong!");
+          }
+    
+          const responseData = await response.json();
+          return responseData;
+        } catch (error) {
+          setError(error);
+          throw error;
+        }
+      };
+    
+      return { data, loading, error, executePut };
 };

@@ -10,7 +10,8 @@
       "rating": {
         "rate": 3.9,
         "count": 120
-      }
+      },
+      "fav": "true"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "rating": {
         "rate": 4.1,
         "count": 259
-      }
+      },
+      "fav": "true"
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "rating": {
         "rate": 4.7,
         "count": 500
-      }
+      },
+      "fav": "false"
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "rating": {
         "rate": 2.1,
         "count": 430
-      }
+      },
+      "fav": "true"
     },
     {
       "id": 5,
@@ -70,7 +74,8 @@
       "rating": {
         "rate": 3.9,
         "count": 70
-      }
+      },
+      "fav": "false"
     },
     {
       "id": 7,
@@ -82,7 +87,8 @@
       "rating": {
         "rate": 3,
         "count": 400
-      }
+      },
+      "fav": "true"
     },
     {
       "id": 8,
@@ -94,7 +100,8 @@
       "rating": {
         "rate": 1.9,
         "count": 100
-      }
+      },
+      "fav": "true"
     },
     {
       "id": 9,
@@ -106,7 +113,8 @@
       "rating": {
         "rate": 3.3,
         "count": 203
-      }
+      },
+      "fav": "false"
     },
     {
       "id": 10,
@@ -118,7 +126,8 @@
       "rating": {
         "rate": 2.9,
         "count": 470
-      }
+      },
+      "fav": "false"
     },
     {
       "id": 11,
@@ -166,7 +175,8 @@
       "rating": {
         "rate": 2.2,
         "count": 140
-      }
+      },
+      "fav": "false"
     },
     {
       "id": 15,

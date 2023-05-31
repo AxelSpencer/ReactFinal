@@ -8,7 +8,10 @@ export const themes = {
     box: 'rgb(228 228 228)',
     btn: '#1c8eff',
     btncolor: '#fff',
-    name: 'Light'
+    name: 'Light',
+    btnp: '#28a745',
+    btnn: '#dc3545',
+    btnc: '#fff'
   },
   dark: {
     foreground: '#fff',
@@ -16,7 +19,10 @@ export const themes = {
     box: '#353738',
     btn: '#1a1a1a',
     btncolor: '#fff',
-    name: 'Dark'
+    name: 'Dark',
+    btnp: '#28a745',
+    btnn: '#dc3545',
+    btnc: '#fff'
   },
   neit: {
     foreground: '#fff',
@@ -24,11 +30,13 @@ export const themes = {
     box: '#4a87d4',
     btn: '#ffc107',
     btncolor: '#000',
-    name: 'NEIT'
+    name: 'NEIT',
+    btnp: '#28a745',
+    btnn: '#dc3545',
+    btnc: '#fff'
   },
 };
 
-// Let our context know what properties to expect
 export const ThemeContext = createContext({
   theme: {},
   toggleTheme: () => {},

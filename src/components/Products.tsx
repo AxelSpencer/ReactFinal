@@ -6,11 +6,10 @@ import Text from './Text';
 import Image from './Image';
 import { ThemeContext } from "../ThemeContext";
 import { useContext } from "react";
+import { ProductListRow } from './ProductListRow';
 
 function Products() {
   const { data: product, loading, error } = useFetch('products');
-
-  console.log(product);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -25,22 +24,9 @@ function Products() {
   return (
     <div>
       <Text size = "l" color = {theme.foreground}><b>Products</b></Text>
-      <>
         {product.map((product) => {
-          return(
-            <div key={product.id}>
-                <Link to={`/product-detail/${product.id}`}>
-                  <Box size="large" bgColor = {theme.box}>
-                    <Image size="s" id={product.image} alt={product.title} />
-                    <div>
-                      <Text size = "m" color = {theme.foreground}>{product.title}</Text>
-                    </div>
-                  </Box>
-                </Link>
-            </div>
-          );
+          return <ProductListRow key={product.id} product={product} />;
         })}
-      </>
     </div>
   );
 }
